@@ -1,4 +1,5 @@
 #测试cuda是否加速了
+#111
 import torch
 import time
 if torch.cuda.is_available():
