@@ -12,7 +12,3 @@ class MNIST():
     test_loader = DataLoader(dataset=test_dataset, batch_size=batch_size, shuffle=True)
 
 
-    print("train_data:", train_dataset.data.size())
-    print("train_labels:", train_dataset.targets.size())
-    print("test_data:", test_dataset.data.size())
-    print("test_labels:", test_dataset.targets.size())
