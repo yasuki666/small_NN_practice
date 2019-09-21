@@ -3,3 +3,4 @@ print(111)
 import torch
 a = torch.tensor([1,1])
 print((a))
+print("success")
