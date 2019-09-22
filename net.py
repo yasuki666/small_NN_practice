@@ -48,5 +48,9 @@ class Batch_Net(nn.Module):
 net1 = simpleNet(28*28,300,100,10)
 net2 = Activation_Net(28*28,300,100,10)
 net3 = Batch_Net(28*28,300,100,10)
-
+if torch.cuda.is_available():
+    net1 = net1.cuda()
+    net2 = net2.cuda()
+    net3 = net3.cuda()
+    print("using cuda")
 

@@ -21,7 +21,9 @@ for epoch in range(num_epoches):
         images,labels = data
         images = Variable(images.view(images.size(0),-1))
         labels = Variable(labels)
-
+        if torch.cuda.is_available():
+            images = images.cuda()
+            labels = labels.cuda()
         outputs = using_net_1(images)
         loss = criterion(outputs,labels)
         optimizer.zero_grad()
@@ -41,7 +43,9 @@ for epoch in range(num_epoches):
         images,labels = data
         images = Variable(images.view(images.size(0),-1))
         labels = Variable(labels)
-
+        if torch.cuda.is_available():
+            images = images.cuda()
+            labels = labels.cuda()
         outputs = using_net_2(images)
         loss = criterion(outputs,labels)
         optimizer.zero_grad()
@@ -60,7 +64,9 @@ for epoch in range(num_epoches):
         images,labels = data
         images = Variable(images.view(images.size(0),-1))
         labels = Variable(labels)
-
+        if torch.cuda.is_available():
+            images = images.cuda()
+            labels = labels.cuda()
         outputs = using_net_3(images)
         loss = criterion(outputs,labels)
         optimizer.zero_grad()
