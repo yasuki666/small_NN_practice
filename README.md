@@ -2,13 +2,13 @@
 尝试建立一个简单的全连接神经网络
 
 
-net.py define a net
+net.py        define a net
 
 dataset.py 
 
-train.py is used to train tehe model
+train.py      be used to train the model
 
-test.py is used to test the model
+test.py       be used to test the model
 
 
 
