@@ -49,4 +49,4 @@ net1 = simpleNet(28*28,300,100,10)
 net2 = Activation_Net(28*28,300,100,10)
 net3 = Batch_Net(28*28,300,100,10)
 
-print(net1)
+
