@@ -11,6 +11,9 @@ using_net_3 = net.net3
 learning_rate = 1e-2
 num_epoches = 5
 
+
+
+
 #训练简单神经网络
 print("开始训练net1")
 criterion = nn.CrossEntropyLoss()
