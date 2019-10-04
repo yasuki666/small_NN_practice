@@ -48,7 +48,7 @@ def main():
             }
 
 
-        #torch.save(state,r'C:\Users\11038\PycharmProjects\small NN practice\small_CNN_practice')
+        torch.save(state,r'C:\Users\11038\PycharmProjects\small NN practice\models\Cifar10_model\%d.ckpt'%(epoch+1))
     print('finish')
 
 if __name__ == '__main__':
