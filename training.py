@@ -83,7 +83,7 @@ for epoch in range(num_epoches):
         'net':using_net_3.state_dict(),
         'epoch': epoch+1,
     }
-    torch.save(state,r'C:\Users\11038\PycharmProjects\small NN practice\models\%d' % (epoch+1))
+    torch.save(state,r'C:\Users\11038\PycharmProjects\small NN practice\models\%d.ckpt' % (epoch+1))
 
 print("finish")
 
