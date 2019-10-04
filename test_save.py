@@ -10,7 +10,6 @@ checkpoint = torch.load(r'C:\Users\11038\PycharmProjects\small NN practice\model
 using_net.load_state_dict(checkpoint['net'])
 start_epoch = checkpoint['epoch']
 
-
 total = 0
 correct =0
 
