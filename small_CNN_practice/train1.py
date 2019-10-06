@@ -13,8 +13,7 @@ def main():
     train_dataset = datasets.CIFAR10(root='/dataset/Cifar10', train=True, transform=transform, download=True)
     test_dataset = datasets.CIFAR10(root='/dataset/Cifar10', train=False, transform=transform, download=True)
     train_loader = DataLoader(dataset=train_dataset, batch_size=batch_size, shuffle=True, num_workers=2)
-    test_loader = DataLoader(dataset=test_dataset, batch_size=batch_size, shuffle=False, num_workers=2)
-    cifar10_classes = ('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
+
 
 
 
@@ -47,8 +46,8 @@ def main():
                 'epoch':epoch+1
             }
 
-
         torch.save(state,r'C:\Users\11038\PycharmProjects\small NN practice\models\Cifar10_model\%d.ckpt'%(epoch+1))
+        print('saved %d epoch'%(epoch+1))
     print('finish')
 
 if __name__ == '__main__':
