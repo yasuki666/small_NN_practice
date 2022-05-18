@@ -1,31 +1,25 @@
 # small_NN_practice
-尝试建立一个简单的全连接神经网络
 
 
-net.py        define a net
+`net.py`        define a net
 
-dataset.py 
+`dataset.py` 
 
-train.py      be used to train the model
+`train.py`      be used to train the model
 
-test.py       be used to test the model
-
-
-
-
-
-net1 简单全连接网络
-
-net2 加入激活函数
-
-net3 添加快速收敛方法
+`test.py`       be used to test the model
 
 
 
 
+large update 0 
 
-large update 0 create net
+create net
 
-large update 1 add to 3 nets
+large update 1 
 
-large update 2 support cuda 
+add to 3 nets
+
+large update 2 
+
+support cuda 
